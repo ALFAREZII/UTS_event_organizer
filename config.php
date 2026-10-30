@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . "/helpers/response.php";
+require_once __DIR__ . "/helpers/response.php"
 
 mysqli_report(MYSQLI_REPORT_OFF);
 
