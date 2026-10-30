@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-switch ($method) {
+switc ($method) {
     case 'GET':
         // GET by ID
         if (isset($_GET['id'])) {
