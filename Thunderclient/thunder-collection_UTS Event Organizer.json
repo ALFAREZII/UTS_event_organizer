@@ -1,0 +1,23 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "UTS Event Organizer",
+    "collectionId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
+    "dateExported": "2026-11-05T09:14:44.400Z",
+    "version": "1.4",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "87a7fc7f-bf7f-4a46-a8bd-1b3184abf46d",
+            "colId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
+            "containerId": "",
+            "name": "UTS",
+            "url": "http://localhost/UTS_event_organizer/api/events.php",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2026-11-05T09:11:50.806Z",
+            "modified": "2026-11-05T09:11:50.806Z",
+            "headers": []
+        }
+    ],
+    "ref": "IkSR0_rT8Z7CljX3xVTzO99S3DrQRDanersXFeO6YC1tJipzxfT3GJDYiuCHczL-9zQyFjKIfASVzfhuZ0721Q"
+}
