@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "UTS Event Organizer",
     "collectionId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
-    "dateExported": "2026-11-05T09:14:44.400Z",
+    "dateExported": "2026-11-07T09:33:16.254Z",
     "version": "1.4",
     "folders": [],
     "requests": [
@@ -17,7 +17,235 @@
             "created": "2026-11-05T09:11:50.806Z",
             "modified": "2026-11-05T09:11:50.806Z",
             "headers": []
+        },
+        {
+            "_id": "dac1d68f-5c0b-4967-ad3c-0f237c4e189d",
+            "colId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
+            "containerId": "",
+            "name": "200ok",
+            "url": "http://localhost/UTS_event_organizer/api/events.php?id=3",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2026-11-07T09:23:05.240Z",
+            "modified": "2026-11-07T09:23:05.240Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "3",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "a11f6c66-4223-42b4-8df3-a150eba92323",
+            "colId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
+            "containerId": "",
+            "name": "Get_id?",
+            "url": "http://localhost/UTS_event_organizer/api/events.php?id=2",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2026-11-07T09:24:12.227Z",
+            "modified": "2026-11-07T09:24:12.227Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "2",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "89395d65-b63f-4c16-9a1a-d870ee890c82",
+            "colId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
+            "containerId": "",
+            "name": "searching",
+            "url": "http://localhost/UTS_event_organizer/api/events.php?search=Mobile",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2026-11-07T09:24:32.435Z",
+            "modified": "2026-11-07T09:24:32.435Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "search",
+                    "value": "Mobile",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "10a3c56e-ba8c-4e1b-ac54-e514bcbbf7f4",
+            "colId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
+            "containerId": "",
+            "name": "limit table shows",
+            "url": "http://localhost/UTS_event_organizer/api/tiket.php",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2026-11-07T09:24:53.458Z",
+            "modified": "2026-11-07T09:24:53.458Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"event_id\": 2,\r",
+                    "  \"kategori\": \"VVIP\",\r",
+                    "  \"harga\": 750000,\r",
+                    "  \"kuota\": 50\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "c7418823-093a-4825-9844-4a31e6cf5387",
+            "colId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
+            "containerId": "",
+            "name": "post VVIP",
+            "url": "http://localhost/UTS_event_organizer/api/tiket.php",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2026-11-07T09:26:01.515Z",
+            "modified": "2026-11-07T09:26:01.515Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"event_id\": 3,\r",
+                    "  \"kategori\": \"VVIP\",\r",
+                    "  \"harga\": 750000,\r",
+                    "  \"kuota\": 50\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "973a37a8-c493-47a7-87c5-2375a58bca99",
+            "colId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
+            "containerId": "",
+            "name": "post fail krna kategori kosong",
+            "url": "http://localhost/UTS_event_organizer/api/tiket.php",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2026-11-07T09:26:55.322Z",
+            "modified": "2026-11-07T09:26:55.322Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"event_id\": 1,\r",
+                    "  \"kategori\": \"\",\r",
+                    "  \"harga\": 100000\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "38c2cd96-2a54-4872-a19f-83f3ec795e14",
+            "colId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
+            "containerId": "",
+            "name": "999 invalid",
+            "url": "http://localhost/UTS_event_organizer/api/events.php?id=1",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2026-11-07T09:27:28.378Z",
+            "modified": "2026-11-07T09:27:28.378Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"event_id\": 999,\r",
+                    "  \"kategori\": \"Premium\",\r",
+                    "  \"harga\": 200000,\r",
+                    "  \"kuota\": 100\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "d054d099-11c4-441f-8875-ed2ffd33c5c0",
+            "colId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
+            "containerId": "",
+            "name": "ngeupdateee",
+            "url": "http://localhost/UTS_event_organizer/api/events.php?id=2",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2026-11-07T09:28:06.554Z",
+            "modified": "2026-11-07T09:28:06.555Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"nama_event\": \"Festival Musik Nusantara 2025\",\r",
+                    "  \"tanggal\": \"2026-12-20\",\r",
+                    "  \"lokasi\": \"Gelora Bung Karno\",\r",
+                    "  \"deskripsi\": \"lengserkan adik prabowo\"\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "46d03660-d540-444e-80d2-69c2d955e5c7",
+            "colId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
+            "containerId": "",
+            "name": "Delete peserta wkwk",
+            "url": "http://localhost/UTS_event_organizer/api/peserta.php?id=2",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2026-11-07T09:28:38.227Z",
+            "modified": "2026-11-07T09:28:38.227Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "2",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "7338966b-5ef4-4849-80da-52a9bcb290c7",
+            "colId": "ec472217-c3a5-4733-9051-b7bd7bb5cc14",
+            "containerId": "",
+            "name": "Secur",
+            "url": "http://localhost/UTS_event_organizer/api/events.php?id=2' OR 3=2--",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2026-11-07T09:30:00.634Z",
+            "modified": "2026-11-07T09:30:00.634Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "2' OR 3=2--",
+                    "isPath": false
+                }
+            ]
         }
     ],
-    "ref": "IkSR0_rT8Z7CljX3xVTzO99S3DrQRDanersXFeO6YC1tJipzxfT3GJDYiuCHczL-9zQyFjKIfASVzfhuZ0721Q"
+    "ref": "IkSR0_rT8Z7CljX3xVTzOyWgbGDc2Vby5gL6uIbRzJZDTj2Ycqg2TmYcxMto4EDbRCCXrP4KRMx1usLuVJDifg"
 }
