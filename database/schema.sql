@@ -22,7 +22,7 @@ CREATE TABLE tiket (
     UNIQUE KEY uk_event_kategori (event_id, kategori)
 );
 
-CREATE TABLE peserta (
+CREATE TABLE peserta 
     id INT AUTO_INCREMENT PRIMARY KEY,
     tiket_id INT NOT NULL,
     nama VARCHAR(100) NOT NULL,
